@@ -150,7 +150,7 @@ if add_sidebar == 'Followers Insights':
        
 ## Posts data
 if add_sidebar == 'Posts Insights':
-       df_posts_metrics = df_posts_dsc[['Date_Time','Profile Visits', 'Impressions', 'Follows', 'Accounts reached', 'Saves', 'Likes', 'Comments', 'Shares']]
+       df_posts_metrics = df_posts_dsc[['Date_Time','Profile Visits', 'Impressions', 'Accounts reached', 'Saves', 'Likes', 'Comments', 'Shares']]
        st.title('Posts Insights')
        st.subheader('Key Metrics')
        st.write('Value = Average value for each metrics from June to August 2022')
@@ -173,7 +173,7 @@ if add_sidebar == 'Posts Insights':
                             count = 0
        
        st.subheader('Percentage growth calculated based on January to May 2022 average for each post')
-       df_posts_final = df_posts_dsc_copy.loc[:,['Date_Time','Post', 'Profile Visits', 'Impressions', 'Follows', 'Accounts reached', 'Saves', 'Likes', 'Comments', 'Shares']]
+       df_posts_final = df_posts_dsc_copy.loc[:,['Date_Time','Post', 'Profile Visits', 'Impressions', 'Accounts reached', 'Saves', 'Likes', 'Comments', 'Shares']]
        #df_posts_final = df_posts_final[df_posts_final['Date_Time'] >= df_posts_3mo_date_metric] #If the dataframe that needs to be shown include on last 3 months data.
        df_posts_numeric_list = df_posts_final.median().index.tolist()
        df_to_pct = {}

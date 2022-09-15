@@ -61,7 +61,7 @@ def load_data():
 
 # Create dataframes from the function
 df_followers, df_followers_asc, df_followers_timeseries, df_posts, df_posts_dsc, df_reels, df_reels_dsc = load_data()
-df_reels_dsc.head(20)
+
 # Engineering data
 ## Posts data
 df_posts_dsc_copy = df_posts_dsc.copy()

@@ -128,6 +128,7 @@ add_sidebar = st.sidebar.selectbox('Select Followers, Posts, or Reels insights:'
 
 ## Followers data
 if add_sidebar == 'Followers Insights':
+       st.title('Instagram Data Analysis')
        st.title('Followers Insights')
        st.subheader('Total number of followers gained per year')
        followers_sum = df_followers_timeseries.groupby(['Year']).sum().reset_index()

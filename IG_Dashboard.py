@@ -242,7 +242,7 @@ if add_sidebar == 'Reels Insights':
        fig5 = px.bar(sub_filter2, x = 'month', y = 'Reel', text='Reel')
        st.plotly_chart(fig5, use_container_width=True)  
        
-       st.subheader('Explore each attribute in a time series (A natural outlier has been removed - 2022-06-09 reel)')
+       st.subheader('Explore each attribute in a time series')
        interactive_plot2(df_reels_dsc_interactive_y_axis)
        
          
